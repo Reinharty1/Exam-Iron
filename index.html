@@ -1,100 +1,198 @@
-<script>
-  let questions = [];
-  let studentName = "";
-
-  async function startExam() {
-    const nameInput = document.getElementById("studentName").value.trim();
-    if (!nameInput) {
-      alert("Please enter your name before starting.");
-      return;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Exam Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
     }
+    .container {
+      max-width: 750px;
+      background: #fff;
+      padding: 30px;
+      margin-top: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .question {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #f2f4f8;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    h2, h3, h4 {
+      text-align: center;
+    }
+    #resultBox {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .correct {
+      color: green;
+      font-weight: bold;
+    }
+    .wrong {
+      color: red;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 8px;
+      margin: 10px auto;
+      display: block;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🧠 Team Online Exam</h2>
 
-    studentName = nameInput;
-    document.getElementById("nameSection").style.display = "none";
-    document.getElementById("quizContainer").style.display = "block";
-    document.getElementById("submitBtn").style.display = "inline-block";
+    <div id="nameSection">
+      <h4>Enter your name to begin:</h4>
+      <input type="text" id="studentName" placeholder="Your name here" />
+      <div style="text-align:center;">
+        <button onclick="startExam()">Start Exam</button>
+      </div>
+    </div>
 
-    await loadQuestions();
-  }
+    <div id="quizContainer" style="display:none;"></div>
 
-  async function loadQuestions() {
-    const response = await fetch('exam_full_100.json');
-    questions = await response.json();
+    <div style="text-align:center; margin-top:20px;">
+      <button id="submitBtn" onclick="submitExam()" style="display:none;">Submit</button>
+    </div>
 
-    // Randomly pick 20 questions
-    questions = questions.sort(() => 0.5 - Math.random()).slice(0, 20);
-    displayQuestions();
-  }
+    <div id="resultBox"></div>
+  </div>
 
-  function displayQuestions() {
-    const container = document.getElementById("quizContainer");
-    container.innerHTML = "";
-    questions.forEach((q, i) => {
-      const optionsHTML = q.options.map((opt, j) => `
-        <label>
-          <input type="radio" name="q${i}" value="${j}"> ${opt}
-        </label><br>
-      `).join("");
+  <script>
+    let questions = [];
+    let studentName = "";
 
-      container.innerHTML += `
-        <div class="question">
-          <p><strong>Q${i + 1}:</strong> ${q.question}</p>
-          ${optionsHTML}
-        </div>
-      `;
-    });
-  }
-
-  function submitExam() {
-    let score = 0;
-    const container = document.getElementById("quizContainer");
-    const questionsDivs = container.getElementsByClassName("question");
-
-    questions.forEach((q, i) => {
-      const selected = document.querySelector(`input[name="q${i}"]:checked`);
-      const selectedValue = selected ? parseInt(selected.value) : null;
-      const selectedText = selected ? q.options[selectedValue] : null;
-
-      let feedback = "";
-
-      if (selectedText === q.answer) {
-        score++;
-        feedback = `<p class="correct">✅ Correct!</p>`;
-      } else {
-        feedback = `<p class="wrong">❌ Wrong! Correct answer: <strong>${q.answer}</strong></p>`;
+    async function startExam() {
+      const nameInput = document.getElementById("studentName").value.trim();
+      if (!nameInput) {
+        alert("Please enter your name before starting.");
+        return;
       }
 
-      questionsDivs[i].insertAdjacentHTML('beforeend', feedback);
-    });
+      studentName = nameInput;
+      document.getElementById("nameSection").style.display = "none";
+      document.getElementById("quizContainer").style.display = "block";
+      document.getElementById("submitBtn").style.display = "inline-block";
 
-    document.getElementById("submitBtn").style.display = "none";
-    showResult(score, questions.length);
-  }
+      await loadQuestions();
+    }
 
-  function showResult(score, total) {
-    const result = document.getElementById("resultBox");
-    result.innerHTML = `
-      <h2>Exam Completed!</h2>
-      <p><strong>${studentName}</strong>, your final score is:</p>
-      <h3 style="color:green">${score} / ${total}</h3>
-      <p>Saving your score...</p>
-    `;
+    async function loadQuestions() {
+      try {
+        const response = await fetch('/exam_full_100.json');
+        questions = await response.json();
 
-    // Save result to server
-    fetch('/save-result', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name: studentName, score, total })
-    })
-    .then(() => {
-      result.innerHTML += `
-        <p style="color:gray">✅ Score saved successfully!</p>
-        <p><a href="/leaderboard" target="_blank">🏆 View Leaderboard</a></p>`;
-    })
-    .catch(() => {
-      result.innerHTML += `<p style="color:red">⚠️ Could not save score (offline mode).</p>`;
-    });
+        if (!Array.isArray(questions) || questions.length === 0) {
+          throw new Error("Question file is empty or invalid.");
+        }
 
-    window.scrollTo(0, document.body.scrollHeight);
-  }
-</script>
+        // Randomly select 20 questions
+        questions = questions.sort(() => 0.5 - Math.random()).slice(0, 20);
+        displayQuestions();
+      } catch (error) {
+        alert("Error loading questions. Please check exam_full_100.json.");
+        console.error(error);
+      }
+    }
+
+    function displayQuestions() {
+      const container = document.getElementById("quizContainer");
+      container.innerHTML = "";
+      questions.forEach((q, i) => {
+        const optionsHTML = q.options.map((opt, j) => `
+          <label>
+            <input type="radio" name="q${i}" value="${j}"> ${opt}
+          </label><br>
+        `).join("");
+
+        container.innerHTML += `
+          <div class="question">
+            <p><strong>Q${i + 1}:</strong> ${q.question}</p>
+            ${optionsHTML}
+          </div>
+        `;
+      });
+    }
+
+    function submitExam() {
+      let score = 0;
+      const container = document.getElementById("quizContainer");
+      const questionsDivs = container.getElementsByClassName("question");
+
+      questions.forEach((q, i) => {
+        const selected = document.querySelector(`input[name="q${i}"]:checked`);
+        const selectedValue = selected ? parseInt(selected.value) : null;
+        const selectedText = selected ? q.options[selectedValue] : null;
+
+        let feedback = "";
+
+        if (selectedText === q.answer) {
+          score++;
+          feedback = `<p class="correct">✅ Correct!</p>`;
+        } else {
+          feedback = `<p class="wrong">❌ Wrong! Correct answer: <strong>${q.answer}</strong></p>`;
+        }
+
+        questionsDivs[i].insertAdjacentHTML('beforeend', feedback);
+      });
+
+      document.getElementById("submitBtn").style.display = "none";
+      showResult(score, questions.length);
+    }
+
+    function showResult(score, total) {
+      const result = document.getElementById("resultBox");
+      result.innerHTML = `
+        <h2>Exam Completed!</h2>
+        <p><strong>${studentName}</strong>, your final score is:</p>
+        <h3 style="color:green">${score} / ${total}</h3>
+        <p>Saving your score...</p>
+      `;
+
+      fetch('/save-result', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: studentName, score, total })
+      })
+      .then(() => {
+        result.innerHTML += `
+          <p style="color:gray">✅ Score saved successfully!</p>
+          <p><a href="/leaderboard" target="_blank">🏆 View Leaderboard</a></p>`;
+      })
+      .catch(() => {
+        result.innerHTML += `<p style="color:red">⚠️ Could not save score (offline mode).</p>`;
+      });
+
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+  </script>
+</body>
+</html>
