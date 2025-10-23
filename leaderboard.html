@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam Leaderboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏆 Exam Leaderboard</h1>
+  <table id="leaderboardTable">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Score</th>
+        <th>Total</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <a href="/">⬅️ Back to Exam</a>
+
+  <script>
+    async function loadLeaderboard() {
+      const response = await fetch('/results');
+      const data = await response.json();
+
+      // Sort by score descending
+      data.sort((a, b) => b.score - a.score);
+
+      const tbody = document.querySelector("#leaderboardTable tbody");
+      tbody.innerHTML = "";
+
+      data.forEach((r, i) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${i + 1}</td>
+          <td>${r.name}</td>
+          <td>${r.score}</td>
+          <td>${r.total}</td>
+          <td>${r.date}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    loadLeaderboard();
+  </script>
+</body>
+</html>
