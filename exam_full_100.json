@@ -1,0 +1,1077 @@
+[
+  {
+    "question_number": 1,
+    "question": "What percentage of blood is composed of blood cells?",
+    "options": ["90%", "53%", "47%", "8%", "None of the above"],
+    "correct_answer": "47%",
+    "points": 1
+  },
+  {
+    "question_number": 2,
+    "question": "What percentage of plasma is water?",
+    "options": ["8%", "47%", "53%", "90%", "None of the above"],
+    "correct_answer": "90%",
+    "points": 1
+  },
+  {
+    "question_number": 3,
+    "question": "What are the main types of plasma proteins?",
+    "options": ["Hemoglobin and Myoglobin", "Albumin and Globulins", "Ferritin and Hemosiderin", "Transferrin and Ceruloplasmin", "None of the above"],
+    "correct_answer": "Albumin and Globulins",
+    "points": 1
+  },
+  {
+    "question_number": 4,
+    "question": "Which blood cells are responsible for the transport of gases (O2 and CO2)?",
+    "options": ["Leukocytes (WBCs)", "Thrombocytes", "Erythrocytes (RBCs)", "All of the above", "None of the above"],
+    "correct_answer": "Erythrocytes (RBCs)",
+    "points": 1
+  },
+  {
+    "question_number": 5,
+    "question": "What is the lifespan of red blood cells?",
+    "options": ["7 days", "30 days", "60 days", "120 days", "150 days"],
+    "correct_answer": "120 days",
+    "points": 1
+  },
+  {
+    "question_number": 6,
+    "question": "What is the process of red blood cell production called?",
+    "options": ["Hematopoiesis", "Erythropoiesis", "Hemolysis", "Erythrocytosis", "None of the above"],
+    "correct_answer": "Erythropoiesis",
+    "points": 1
+  },
+  {
+    "question_number": 7,
+    "question": "Where are hematopoietic stem cells (HSCs) located?",
+    "options": ["Spleen", "Liver", "Kidney", "Bone marrow", "Lymph nodes"],
+    "correct_answer": "Bone marrow",
+    "points": 1
+  },
+  {
+    "question_number": 8,
+    "question": "Which organ produces erythropoietin (EPO)?",
+    "options": ["Spleen and Liver", "Kidney and Liver", "Kidney and Bone Marrow", "Liver and Bone Marrow", "None of the above"],
+    "correct_answer": "Kidney and Liver",
+    "points": 1
+  },
+  {
+    "question_number": 9,
+    "question": "A patient's kidney cells detect low oxygen levels in the blood. What hormone do they produce in response?",
+    "options": ["Cortisol", "Insulin", "Erythropoietin (EPO)", "Adrenaline", "None of the above"],
+    "correct_answer": "Erythropoietin (EPO)",
+    "points": 1
+  },
+  {
+    "question_number": 10,
+    "question": "What is the primary target of Erythropoietin (EPO) in the body?",
+    "options": ["The liver to produce more plasma proteins", "The spleen to recycle old red blood cells", "The bone marrow to produce more red blood cells", "The lungs to increase oxygen intake", "None of the above"],
+    "correct_answer": "The bone marrow to produce more red blood cells",
+    "points": 1
+  }
+,
+  {
+    "question_number": 11,
+    "question": "What is the relationship between erythropoiesis and iron?",
+    "options": [
+      "They are completely independent",
+      "Iron inhibits erythropoiesis",
+      "Erythropoiesis requires a close association with iron and erythropoietin",
+      "Erythropoietin replaces the need for iron",
+      "None of the above"
+    ],
+    "correct_answer": "Erythropoiesis requires a close association with iron and erythropoietin",
+    "points": 1
+  },
+  {
+    "question_number": 12,
+    "question": "What happens if one component, like iron, is absent during red cell production?",
+    "options": [
+      "The body compensates by producing more EPO.",
+      "Red cell production becomes more efficient.",
+      "Anemia develops.",
+      "Hemoglobin is still produced, but it's less functional.",
+      "None of the above"
+    ],
+    "correct_answer": "Anemia develops.",
+    "points": 1
+  },
+  {
+    "question_number": 13,
+    "question": "What is the normal lifespan of a red blood cell?",
+    "options": ["About 7 days", "About 30 days", "About 120 days", "About 180 days", "About 365 days"],
+    "correct_answer": "About 120 days",
+    "points": 1
+  },
+  {
+    "question_number": 14,
+    "question": "What is the main function of erythrocytes?",
+    "options": [
+      "To fight infections",
+      "To clot blood",
+      "To transport oxygen from the lungs to tissues and carbon dioxide from tissues to the lungs",
+      "To produce hormones",
+      "None of the above"
+    ],
+    "correct_answer": "To transport oxygen from the lungs to tissues and carbon dioxide from tissues to the lungs",
+    "points": 1
+  },
+  {
+    "question_number": 15,
+    "question": "What condition is characterized by red blood cells with a diameter greater than 7.5μm?",
+    "options": ["Normocytosis", "Microcytosis", "Macrocytosis", "Hypochromia", "None of the above"],
+    "correct_answer": "Macrocytosis",
+    "points": 1
+  },
+  {
+    "question_number": 16,
+    "question": "What is the diameter of an erythrocyte in a condition called 'normocytosis'?",
+    "options": ["Less than 7.5μm", "Greater than 7.5μm", "Close to 7.5μm", "Exactly 2.0μm", "None of the above"],
+    "correct_answer": "Close to 7.5μm",
+    "points": 1
+  },
+  {
+    "question_number": 17,
+    "question": "What is the functioning component of the erythrocyte?",
+    "options": ["Globin", "Heme", "Iron", "Hemoglobin", "All of the above"],
+    "correct_answer": "Hemoglobin",
+    "points": 1
+  },
+  {
+    "question_number": 18,
+    "question": "What element is at the center of each heme group in a hemoglobin molecule?",
+    "options": ["Oxygen", "Carbon dioxide", "Iron (Fe+2)", "Nitrogen", "None of the above"],
+    "correct_answer": "Iron (Fe+2)",
+    "points": 1
+  },
+  {
+    "question_number": 19,
+    "question": "How many moles of oxygen can one mole of hemoglobin bind?",
+    "options": ["1", "2", "3", "4", "8"],
+    "correct_answer": "4",
+    "points": 1
+  },
+  {
+    "question_number": 20,
+    "question": "What facilitates the exchange of O2 with CO2 in the tissues?",
+    "options": [
+      "High O2 and low CO2 concentration",
+      "Low O2 and high CO2 concentration",
+      "High atmospheric pressure",
+      "Low atmospheric pressure",
+      "None of the above"
+    ],
+    "correct_answer": "Low O2 and high CO2 concentration",
+    "points": 1
+  }
+,
+  {
+    "question_number": 21,
+    "question": "What happens to the heme constituent of hemoglobin when an aging red blood cell is broken down?",
+    "options": [
+      "It is released intact to be reused.",
+      "It is broken down into iron (Fe+2) and bilirubin.",
+      "It is stored as hemosiderin.",
+      "It is excreted from the body.",
+      "None of the above"
+    ],
+    "correct_answer": "It is broken down into iron (Fe+2) and bilirubin.",
+    "points": 1
+  },
+  {
+    "question_number": 22,
+    "question": "How is the iron from a broken-down heme group recirculated in the body?",
+    "options": [
+      "By being released into the plasma to be recirculated by transferrin",
+      "By being stored in the bone marrow",
+      "By being directly transported to the kidneys",
+      "By being excreted through the bile",
+      "None of the above"
+    ],
+    "correct_answer": "By being released into the plasma to be recirculated by transferrin",
+    "points": 1
+  },
+  {
+    "question_number": 23,
+    "question": "What are the two main iron-containing proteins that are essential for oxygen transport?",
+    "options": [
+      "Ferritin and Hemosiderin",
+      "Transferrin and Ceruloplasmin",
+      "Hemoglobin and Myoglobin",
+      "Albumin and Globulins",
+      "None of the above"
+    ],
+    "correct_answer": "Hemoglobin and Myoglobin",
+    "points": 1
+  },
+  {
+    "question_number": 24,
+    "question": "What percentage of the iron in the body is found in hemoglobin?",
+    "options": ["Less than 1/3", "Almost 2/3", "100%", "10%", "None of the above"],
+    "correct_answer": "Almost 2/3",
+    "points": 1
+  },
+  {
+    "question_number": 25,
+    "question": "What is the normal iron content in the human body?",
+    "options": ["3−4 mg", "3−4 g", "10−20 mg", "100−200 mg", "1−2 mg"],
+    "correct_answer": "3−4 g",
+    "points": 1
+  },
+  {
+    "question_number": 26,
+    "question": "What are the two main forms of stored iron in the body?",
+    "options": [
+      "Ferritin and Hemosiderin",
+      "Hemoglobin and Myoglobin",
+      "Transferrin and Ceruloplasmin",
+      "Albumin and Globulin",
+      "None of the above"
+    ],
+    "correct_answer": "Ferritin and Hemosiderin",
+    "points": 1
+  },
+  {
+    "question_number": 27,
+    "question": "What is the main role of iron in the body?",
+    "options": [
+      "To produce energy directly",
+      "To facilitate cellular respiration",
+      "To act as a lubricant for joints",
+      "To strengthen bones",
+      "None of the above"
+    ],
+    "correct_answer": "To facilitate cellular respiration",
+    "points": 1
+  },
+  {
+    "question_number": 28,
+    "question": "What is the average daily iron loss for an adult male and a non-menstruating female?",
+    "options": ["0.5 mg", "1 mg", "1.4−3.2 mg", "5−10 mg", "10−20 mg"],
+    "correct_answer": "1 mg",
+    "points": 1
+  },
+  {
+    "question_number": 29,
+    "question": "What is the main way the body regulates its iron balance?",
+    "options": [
+      "By controlling iron excretion",
+      "By increasing iron loss",
+      "By controlling iron absorption",
+      "By recycling red blood cells more frequently",
+      "None of the above"
+    ],
+    "correct_answer": "By controlling iron absorption",
+    "points": 1
+  },
+  {
+    "question_number": 30,
+    "question": "Which of the following is a non-heme iron-containing food?",
+    "options": ["Meat", "Fish", "Poultry", "Plant-based food", "All of the above"],
+    "correct_answer": "Plant-based food",
+    "points": 1
+  }
+,
+  {
+    "question_number": 31,
+    "question": "How much more absorbable is heme iron from meat, poultry, and fish compared to non-heme iron?",
+    "options": [
+      "2−3 times more absorbable",
+      "5−10 times more absorbable",
+      "The same absorbability",
+      "Less absorbable",
+      "None of the above"
+    ],
+    "correct_answer": "2−3 times more absorbable",
+    "points": 1
+  },
+  {
+    "question_number": 32,
+    "question": "What substance enhances the absorption of non-heme iron?",
+    "options": ["Calcium", "Polyphenols", "Vitamin C", "Phytates", "None of the above"],
+    "correct_answer": "Vitamin C",
+    "points": 1
+  },
+  {
+    "question_number": 33,
+    "question": "What is the recommended absorbed iron requirement for a pregnant woman in the third trimester?",
+    "options": ["0.8 mg/day", "1.4−3.2 mg/day", "7.5 mg/day", "10 mg/day", "20 mg/day"],
+    "correct_answer": "7.5 mg/day",
+    "points": 1
+  },
+  {
+    "question_number": 34,
+    "question": "What is a key reason for the increased iron requirement during pregnancy?",
+    "options": [
+      "Increased blood volume",
+      "Growth of the fetal-placental unit",
+      "Anticipated blood loss during delivery",
+      "All of the above",
+      "None of the above"
+    ],
+    "correct_answer": "All of the above",
+    "points": 1
+  },
+  {
+    "question_number": 35,
+    "question": "Where is ferric iron (Fe+3) reduced to ferrous iron (Fe+2) in the body?",
+    "options": ["In the stomach", "In the duodenal lumen", "In the liver", "In the bone marrow", "In the spleen"],
+    "correct_answer": "In the duodenal lumen",
+    "points": 1
+  },
+  {
+    "question_number": 36,
+    "question": "What is the function of the divalent metal transporter DMT-1?",
+    "options": [
+      "To transport iron out of the enterocyte",
+      "To transport heme iron into the enterocyte",
+      "To co-transport ferrous iron (Fe+2) and a proton (H+) into the enterocyte",
+      "To store iron inside the enterocyte",
+      "None of the above"
+    ],
+    "correct_answer": "To co-transport ferrous iron (Fe+2) and a proton (H+) into the enterocyte",
+    "points": 1
+  },
+  {
+    "question_number": 37,
+    "question": "What is the protein that stores iron inside the intestinal mucosal cell?",
+    "options": ["Transferrin", "Ferritin", "Hepcidin", "Ceruloplasmin", "None of the above"],
+    "correct_answer": "Ferritin",
+    "points": 1
+  },
+  {
+    "question_number": 38,
+    "question": "What is the name of the transporter that exports iron out of the enterocyte into the blood?",
+    "options": ["DMT-1", "Apoferritin", "Ferroportin", "Ceruloplasmin", "None of the above"],
+    "correct_answer": "Ferroportin",
+    "points": 1
+  },
+  {
+    "question_number": 39,
+    "question": "What is the main regulatory hormone involved in iron regulation?",
+    "options": ["Erythropoietin", "Transferrin", "Hepcidin", "Insulin", "None of the above"],
+    "correct_answer": "Hepcidin",
+    "points": 1
+  },
+  {
+    "question_number": 40,
+    "question": "What is the action of hepcidin?",
+    "options": [
+      "It increases iron absorption from the intestine.",
+      "It stimulates red blood cell production.",
+      "It down-regulates the release of iron from enterocytes, macrophages, and hepatocytes.",
+      "It facilitates the binding of iron to transferrin.",
+      "None of the above"
+    ],
+    "correct_answer": "It down-regulates the release of iron from enterocytes, macrophages, and hepatocytes.",
+    "points": 1
+  }
+,
+  {
+    "question_number": 41,
+    "question": "What is the purpose of the iron-binding proteins in the body?",
+    "options": [
+      "To make iron insoluble",
+      "To make iron soluble but safe",
+      "To increase the toxicity of iron",
+      "To prevent iron from being absorbed",
+      "None of the above"
+    ],
+    "correct_answer": "To make iron soluble but safe",
+    "points": 1
+  },
+  {
+    "question_number": 42,
+    "question": "What is non-transferrin bound iron (NTBI)?",
+    "options": [
+      "Iron that is bound to ferritin",
+      "Iron that is bound to transferrin",
+      "Iron that is freely circulating and not bound to transferrin",
+      "Iron that is stored in the liver",
+      "None of the above"
+    ],
+    "correct_answer": "Iron that is freely circulating and not bound to transferrin",
+    "points": 1
+  },
+  {
+    "question_number": 43,
+    "question": "Why is non-transferrin bound iron (NTBI) considered toxic?",
+    "options": [
+      "It is poorly absorbed by the body.",
+      "It leads to controlled iron uptake.",
+      "It causes the release of free radicals, which leads to oxidative stress and cellular damage.",
+      "It is excreted too quickly from the body.",
+      "None of the above"
+    ],
+    "correct_answer": "It causes the release of free radicals, which leads to oxidative stress and cellular damage.",
+    "points": 1
+  },
+  {
+    "question_number": 44,
+    "question": "Which of the following is a potential consequence of non-transferrin bound iron (NTBI) toxicity?",
+    "options": ["Liver cirrhosis", "Cardiac dysfunction", "Diabetes", "All of the above", "None of the above"],
+    "correct_answer": "All of the above",
+    "points": 1
+  },
+  {
+    "question_number": 45,
+    "question": "What are the common gastrointestinal side effects of ferrous sulfate?",
+    "options": [
+      "Nausea",
+      "Vomiting",
+      "Abdominal pain and constipation",
+      "All of the above",
+      "None of the above"
+    ],
+    "correct_answer": "All of the above",
+    "points": 1
+  },
+  {
+    "question_number": 46,
+    "question": "What is an advantage of Iron Polymaltose Complex (IPC) compared to iron sulfate salts?",
+    "options": [
+      "Higher toxicity",
+      "It cannot be taken with meals",
+      "It has a less favorable side-effect profile",
+      "It has lower toxicity due to reduced formation of oxygen radicals",
+      "None of the above"
+    ],
+    "correct_answer": "It has lower toxicity due to reduced formation of oxygen radicals",
+    "points": 1
+  },
+  {
+    "question_number": 47,
+    "question": "What is the FDA's warning about accidental overdose of iron-containing products?",
+    "options": [
+      "It is a leading cause of fatal poisoning in children under 6.",
+      "It leads to harmless side effects.",
+      "It is not a major concern.",
+      "It is only an issue for adults.",
+      "None of the above"
+    ],
+    "correct_answer": "It is a leading cause of fatal poisoning in children under 6.",
+    "points": 1
+  },
+  {
+    "question_number": 48,
+    "question": "What is the recommended dose and duration for iron supplementation for pregnant women?",
+    "options": ["30 mg/day for 3 months", "60 mg/day for 6 months", "120 mg/day for 6 months", "60 mg/day until delivery", "None of the above"],
+    "correct_answer": "60 mg/day for 6 months",
+    "points": 1
+  },
+  {
+    "question_number": 49,
+    "question": "What is the primary indicator for anemia, which can be measured directly?",
+    "options": ["Serum iron", "Transferrin saturation", "Blood hemoglobin (Hb) concentration", "Serum ferritin", "None of the above"],
+    "correct_answer": "Blood hemoglobin (Hb) concentration",
+    "points": 1
+  },
+  {
+    "question_number": 50,
+    "question": "What is the definition of anemia for a non-pregnant woman?",
+    "options": ["Hemoglobin <13 g/dL", "Hemoglobin <12 g/dL", "Hemoglobin <11 g/dL", "Hemoglobin <10.5 g/dL", "None of the above"],
+    "correct_answer": "Hemoglobin <12 g/dL",
+    "points": 1
+  }
+,
+  {
+    "question_number": 51,
+    "question": "What is the definition of anemia for a man?",
+    "options": [
+      "Hemoglobin <13 g/dL",
+      "Hemoglobin <12 g/dL",
+      "Hemoglobin <11.5 g/dL",
+      "Hemoglobin <11 g/dL",
+      "None of the above"
+    ],
+    "correct_answer": "Hemoglobin <13 g/dL",
+    "points": 1
+  },
+  {
+    "question_number": 52,
+    "question": "What is the hemoglobin level that indicates severe anemia?",
+    "options": [
+      "10.0−10.9 g/dL",
+      "8.0−9.9 g/dL",
+      "6.5−7.9 g/dL",
+      "<6.5 g/dL",
+      "None of the above"
+    ],
+    "correct_answer": "6.5−7.9 g/dL",
+    "points": 1
+  },
+  {
+    "question_number": 53,
+    "question": "What is the hemoglobin level that indicates life-threatening anemia?",
+    "options": [
+      "10.0−10.9 g/dL",
+      "8.0−9.9 g/dL",
+      "6.5−7.9 g/dL",
+      "<6.5 g/dL",
+      "None of the above"
+    ],
+    "correct_answer": "<6.5 g/dL",
+    "points": 1
+  },
+  {
+    "question_number": 54,
+    "question": "How is iron deficiency anemia treated?",
+    "options": [
+      "With diet changes and iron supplements.",
+      "With blood transfusions only.",
+      "With high doses of Vitamin C.",
+      "With anti-inflammatory drugs.",
+      "None of the above"
+    ],
+    "correct_answer": "With diet changes and iron supplements.",
+    "points": 1
+  },
+  {
+    "question_number": 55,
+    "question": "Which of the following is a cause of anemia due to production issues?",
+    "options": [
+      "Chronic blood loss",
+      "Iron deficiency anemia",
+      "Congenital erythrocyte membrane defects",
+      "Acute blood loss",
+      "None of the above"
+    ],
+    "correct_answer": "Iron deficiency anemia",
+    "points": 1
+  },
+  {
+    "question_number": 56,
+    "question": "What is the normal range for a woman's hematocrit?",
+    "options": [
+      "37%−47%",
+      "42%−52%",
+      "30%−50%",
+      "50−150 μg/dL",
+      "None of the above"
+    ],
+    "correct_answer": "37%−47%",
+    "points": 1
+  },
+  {
+    "question_number": 57,
+    "question": "A patient's red blood cells are smaller than normal. What is this condition called?",
+    "options": ["Normocytosis", "Macrocytosis", "Microcytosis", "Hypochromia", "None of the above"],
+    "correct_answer": "Microcytosis",
+    "points": 1
+  },
+  {
+    "question_number": 58,
+    "question": "What is the term for a decreased Mean Corpuscular Volume (MCV)?",
+    "options": ["Macrocytic", "Microcytic", "Normocytic", "Hypochromic", "None of the above"],
+    "correct_answer": "Microcytic",
+    "points": 1
+  },
+  {
+    "question_number": 59,
+    "question": "What is the main cause of megaloblastic anemia?",
+    "options": [
+      "Iron deficiency",
+      "Chronic blood loss",
+      "Vitamin B12 or folic acid deficiency",
+      "Renal disorders",
+      "None of the above"
+    ],
+    "correct_answer": "Vitamin B12 or folic acid deficiency",
+    "points": 1
+  },
+  {
+    "question_number": 60,
+    "question": "What is a key characteristic of a blood film in a patient with iron deficiency anemia?",
+    "options": [
+      "Normocytic and normochromic red cells",
+      "Microcytic and hypochromic red cells",
+      "Macrocytic and hyperchromic red cells",
+      "All of the above",
+      "None of the above"
+    ],
+    "correct_answer": "Microcytic and hypochromic red cells",
+    "points": 1
+  }
+,
+  {
+    "question_number": 61,
+    "question": "What does hypochromic mean in relation to red blood cells?",
+    "options": [
+      "Red cells have increased hemoglobin concentration.",
+      "Red cells have decreased hemoglobin concentration and appear pale.",
+      "Red cells are larger than normal.",
+      "Red cells are spherical.",
+      "None of the above"
+    ],
+    "correct_answer": "Red cells have decreased hemoglobin concentration and appear pale.",
+    "points": 1
+  },
+  {
+    "question_number": 62,
+    "question": "What are common symptoms of iron deficiency anemia?",
+    "options": [
+      "Fatigue and weakness",
+      "Pale skin",
+      "Shortness of breath",
+      "Dizziness",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "points": 1
+  },
+  {
+    "question_number": 63,
+    "question": "What is the most common cause of iron deficiency anemia worldwide?",
+    "options": [
+      "Dietary deficiency",
+      "Infections",
+      "Chronic blood loss",
+      "Increased iron absorption",
+      "None of the above"
+    ],
+    "correct_answer": "Chronic blood loss",
+    "points": 1
+  },
+  {
+    "question_number": 64,
+    "question": "What is the most important factor to consider when diagnosing iron deficiency anemia?",
+    "options": [
+      "Total iron-binding capacity (TIBC)",
+      "Serum ferritin level",
+      "Hematocrit value",
+      "Erythropoietin concentration",
+      "None of the above"
+    ],
+    "correct_answer": "Serum ferritin level",
+    "points": 1
+  },
+  {
+    "question_number": 65,
+    "question": "What serum ferritin level indicates iron deficiency?",
+    "options": ["<15 µg/L", "<30 µg/L", "<50 µg/L", "<100 µg/L", "None of the above"],
+    "correct_answer": "<15 µg/L",
+    "points": 1
+  },
+  {
+    "question_number": 66,
+    "question": "In which situation might serum ferritin not accurately reflect iron stores?",
+    "options": [
+      "In cases of infection or inflammation",
+      "In cases of iron overload",
+      "In cases of dehydration",
+      "In cases of anemia of chronic disease",
+      "Both A and D"
+    ],
+    "correct_answer": "Both A and D",
+    "points": 1
+  },
+  {
+    "question_number": 67,
+    "question": "What is the normal transferrin saturation percentage in a healthy individual?",
+    "options": ["10−15%", "20−45%", "50−70%", "75−90%", "None of the above"],
+    "correct_answer": "20−45%",
+    "points": 1
+  },
+  {
+    "question_number": 68,
+    "question": "What is the typical transferrin saturation percentage in iron deficiency anemia?",
+    "options": [">50%", "20−45%", "10−15%", "0−5%", "None of the above"],
+    "correct_answer": "10−15%",
+    "points": 1
+  },
+  {
+    "question_number": 69,
+    "question": "What is the characteristic pattern of iron studies in anemia of chronic disease (ACD)?",
+    "options": [
+      "Low serum iron, low TIBC, high ferritin",
+      "Low serum iron, high TIBC, low ferritin",
+      "High serum iron, high TIBC, low ferritin",
+      "High serum iron, low TIBC, high ferritin",
+      "None of the above"
+    ],
+    "correct_answer": "Low serum iron, low TIBC, high ferritin",
+    "points": 1
+  },
+  {
+    "question_number": 70,
+    "question": "What is the distinguishing feature between iron deficiency anemia (IDA) and anemia of chronic disease (ACD)?",
+    "options": [
+      "Ferritin level — low in IDA and high in ACD",
+      "Ferritin level — high in IDA and low in ACD",
+      "Serum iron — high in both conditions",
+      "Hemoglobin — normal in both conditions",
+      "None of the above"
+    ],
+    "correct_answer": "Ferritin level — low in IDA and high in ACD",
+    "points": 1
+  }
+,
+  {
+    "question_number": 71,
+    "question": "What are common causes of anemia of chronic disease (ACD)?",
+    "options": [
+      "Chronic infections",
+      "Autoimmune disorders",
+      "Chronic kidney disease",
+      "All of the above",
+      "None of the above"
+    ],
+    "correct_answer": "All of the above",
+    "points": 1
+  },
+  {
+    "question_number": 72,
+    "question": "What is the mechanism of anemia in chronic kidney disease?",
+    "options": [
+      "Increased red blood cell destruction",
+      "Decreased erythropoietin (EPO) production",
+      "Decreased hemoglobin affinity for oxygen",
+      "Increased iron absorption",
+      "None of the above"
+    ],
+    "correct_answer": "Decreased erythropoietin (EPO) production",
+    "points": 1
+  },
+  {
+    "question_number": 73,
+    "question": "What type of anemia is associated with chronic renal failure?",
+    "options": [
+      "Microcytic anemia",
+      "Normocytic normochromic anemia",
+      "Macrocytic anemia",
+      "Hypochromic anemia",
+      "None of the above"
+    ],
+    "correct_answer": "Normocytic normochromic anemia",
+    "points": 1
+  },
+  {
+    "question_number": 74,
+    "question": "What is the main function of transferrin?",
+    "options": [
+      "To store iron in the liver",
+      "To transport iron in the plasma",
+      "To release iron into the intestine",
+      "To synthesize heme",
+      "None of the above"
+    ],
+    "correct_answer": "To transport iron in the plasma",
+    "points": 1
+  },
+  {
+    "question_number": 75,
+    "question": "What is the laboratory finding characteristic of iron overload?",
+    "options": [
+      "Low serum iron and low ferritin",
+      "High serum iron and high ferritin",
+      "Low serum iron and high ferritin",
+      "High TIBC and low ferritin",
+      "None of the above"
+    ],
+    "correct_answer": "High serum iron and high ferritin",
+    "points": 1
+  },
+  {
+    "question_number": 76,
+    "question": "What is hemosiderin?",
+    "options": [
+      "An insoluble storage form of iron found in tissues",
+      "A transport protein for iron",
+      "A plasma protein that binds heme",
+      "A form of dietary iron",
+      "None of the above"
+    ],
+    "correct_answer": "An insoluble storage form of iron found in tissues",
+    "points": 1
+  },
+  {
+    "question_number": 77,
+    "question": "What is the condition caused by excessive iron accumulation in tissues?",
+    "options": ["Anemia", "Polycythemia", "Hemochromatosis", "Thalassemia", "None of the above"],
+    "correct_answer": "Hemochromatosis",
+    "points": 1
+  },
+  {
+    "question_number": 78,
+    "question": "What organ is most affected by iron overload in hemochromatosis?",
+    "options": ["Brain", "Kidney", "Liver", "Pancreas", "All of the above"],
+    "correct_answer": "Liver",
+    "points": 1
+  },
+  {
+    "question_number": 79,
+    "question": "What is secondary hemochromatosis most commonly caused by?",
+    "options": [
+      "Repeated blood transfusions",
+      "Chronic inflammation",
+      "Autoimmune diseases",
+      "Decreased dietary iron intake",
+      "None of the above"
+    ],
+    "correct_answer": "Repeated blood transfusions",
+    "points": 1
+  },
+  {
+    "question_number": 80,
+    "question": "Which of the following laboratory findings is consistent with iron overload?",
+    "options": [
+      "Low transferrin saturation",
+      "High transferrin saturation",
+      "Normal ferritin level",
+      "Low serum iron",
+      "None of the above"
+    ],
+    "correct_answer": "High transferrin saturation",
+    "points": 1
+  }
+,
+  {
+    "question_number": 81,
+    "question": "What is the primary treatment for hemochromatosis?",
+    "options": [
+      "Iron supplementation",
+      "Phlebotomy (regular blood removal)",
+      "Blood transfusions",
+      "Vitamin B12 therapy",
+      "None of the above"
+    ],
+    "correct_answer": "Phlebotomy (regular blood removal)",
+    "points": 1
+  },
+  {
+    "question_number": 82,
+    "question": "What is the most common hereditary disorder leading to excessive iron absorption?",
+    "options": ["Sickle cell anemia", "Hemochromatosis", "Thalassemia", "Pernicious anemia", "None of the above"],
+    "correct_answer": "Hemochromatosis",
+    "points": 1
+  },
+  {
+    "question_number": 83,
+    "question": "What is the role of ferritin in the body?",
+    "options": [
+      "It transports oxygen in the blood.",
+      "It transports iron in the plasma.",
+      "It stores iron in tissues for future use.",
+      "It excretes excess iron through the kidneys.",
+      "None of the above"
+    ],
+    "correct_answer": "It stores iron in tissues for future use.",
+    "points": 1
+  },
+  {
+    "question_number": 84,
+    "question": "Which laboratory parameter reflects the total body iron stores most accurately?",
+    "options": ["Serum ferritin", "Serum iron", "Transferrin", "Hemoglobin", "Hematocrit"],
+    "correct_answer": "Serum ferritin",
+    "points": 1
+  },
+  {
+    "question_number": 85,
+    "question": "What is sideroblastic anemia characterized by?",
+    "options": [
+      "Presence of ring sideroblasts in the bone marrow",
+      "Absence of iron stores in tissues",
+      "Macrocytic red blood cells",
+      "Iron deficiency in the plasma",
+      "None of the above"
+    ],
+    "correct_answer": "Presence of ring sideroblasts in the bone marrow",
+    "points": 1
+  },
+  {
+    "question_number": 86,
+    "question": "What causes sideroblastic anemia?",
+    "options": [
+      "Defect in heme synthesis",
+      "Iron deficiency",
+      "Vitamin B12 deficiency",
+      "Decreased erythropoietin production",
+      "None of the above"
+    ],
+    "correct_answer": "Defect in heme synthesis",
+    "points": 1
+  },
+  {
+    "question_number": 87,
+    "question": "What is the appearance of red cells in thalassemia?",
+    "options": [
+      "Normocytic and normochromic",
+      "Microcytic and hypochromic",
+      "Macrocytic and hyperchromic",
+      "Spherocytic",
+      "None of the above"
+    ],
+    "correct_answer": "Microcytic and hypochromic",
+    "points": 1
+  },
+  {
+    "question_number": 88,
+    "question": "What is thalassemia caused by?",
+    "options": [
+      "Decreased production of globin chains",
+      "Deficiency of iron",
+      "Decreased vitamin B12 absorption",
+      "Excess hepcidin production",
+      "None of the above"
+    ],
+    "correct_answer": "Decreased production of globin chains",
+    "points": 1
+  },
+  {
+    "question_number": 89,
+    "question": "What is the difference between α-thalassemia and β-thalassemia?",
+    "options": [
+      "α-thalassemia affects alpha-globin chain production, β-thalassemia affects beta-globin chain production",
+      "α-thalassemia affects beta-globin chain production, β-thalassemia affects alpha-globin chain production",
+      "They both affect the same globin chain",
+      "α-thalassemia is caused by iron deficiency",
+      "None of the above"
+    ],
+    "correct_answer": "α-thalassemia affects alpha-globin chain production, β-thalassemia affects beta-globin chain production",
+    "points": 1
+  },
+  {
+    "question_number": 90,
+    "question": "What is the main laboratory finding in thalassemia trait?",
+    "options": [
+      "High MCV and high MCH",
+      "Low MCV and low MCH",
+      "Normal MCV and normal MCH",
+      "High ferritin level",
+      "None of the above"
+    ],
+    "correct_answer": "Low MCV and low MCH",
+    "points": 1
+  }
+,
+  {
+    "question_number": 91,
+    "question": "What is the diagnostic test used to confirm β-thalassemia?",
+    "options": [
+      "Iron studies",
+      "Bone marrow biopsy",
+      "Hemoglobin electrophoresis",
+      "Serum ferritin test",
+      "None of the above"
+    ],
+    "correct_answer": "Hemoglobin electrophoresis",
+    "points": 1
+  },
+  {
+    "question_number": 92,
+    "question": "What is the most common cause of megaloblastic anemia?",
+    "options": [
+      "Iron deficiency",
+      "Folic acid or Vitamin B12 deficiency",
+      "Chronic blood loss",
+      "Renal failure",
+      "None of the above"
+    ],
+    "correct_answer": "Folic acid or Vitamin B12 deficiency",
+    "points": 1
+  },
+  {
+    "question_number": 93,
+    "question": "What is the characteristic finding in the bone marrow of patients with megaloblastic anemia?",
+    "options": [
+      "Microcytosis",
+      "Megaloblastic hyperplasia",
+      "Hypochromia",
+      "Iron overload",
+      "None of the above"
+    ],
+    "correct_answer": "Megaloblastic hyperplasia",
+    "points": 1
+  },
+  {
+    "question_number": 94,
+    "question": "Which vitamin deficiency is associated with neurological symptoms?",
+    "options": [
+      "Vitamin B1",
+      "Vitamin B2",
+      "Vitamin B6",
+      "Vitamin B12",
+      "Vitamin C"
+    ],
+    "correct_answer": "Vitamin B12",
+    "points": 1
+  },
+  {
+    "question_number": 95,
+    "question": "What are typical symptoms of Vitamin B12 deficiency?",
+    "options": [
+      "Numbness and tingling of hands and feet",
+      "Difficulty walking",
+      "Fatigue and pallor",
+      "All of the above",
+      "None of the above"
+    ],
+    "correct_answer": "All of the above",
+    "points": 1
+  },
+  {
+    "question_number": 96,
+    "question": "What is pernicious anemia caused by?",
+    "options": [
+      "Dietary iron deficiency",
+      "Lack of intrinsic factor leading to Vitamin B12 malabsorption",
+      "Chronic blood loss",
+      "Autoimmune destruction of red blood cells",
+      "None of the above"
+    ],
+    "correct_answer": "Lack of intrinsic factor leading to Vitamin B12 malabsorption",
+    "points": 1
+  },
+  {
+    "question_number": 97,
+    "question": "What laboratory finding is consistent with folic acid deficiency?",
+    "options": [
+      "Low serum folate",
+      "Low serum ferritin",
+      "Low serum iron",
+      "High serum B12",
+      "None of the above"
+    ],
+    "correct_answer": "Low serum folate",
+    "points": 1
+  },
+  {
+    "question_number": 98,
+    "question": "Which test can distinguish between Vitamin B12 and folate deficiency?",
+    "options": [
+      "Serum ferritin test",
+      "Methylmalonic acid (MMA) level",
+      "Hemoglobin electrophoresis",
+      "Total iron-binding capacity (TIBC)",
+      "None of the above"
+    ],
+    "correct_answer": "Methylmalonic acid (MMA) level",
+    "points": 1
+  },
+  {
+    "question_number": 99,
+    "question": "What is the treatment for folate deficiency?",
+    "options": [
+      "Oral folic acid supplements",
+      "Iron tablets",
+      "Vitamin B12 injections",
+      "Phlebotomy",
+      "None of the above"
+    ],
+    "correct_answer": "Oral folic acid supplements",
+    "points": 1
+  },
+  {
+    "question_number": 100,
+    "question": "What is the treatment for Vitamin B12 deficiency due to lack of intrinsic factor?",
+    "options": [
+      "Oral Vitamin B12 tablets",
+      "Intramuscular Vitamin B12 injections",
+      "Iron supplementation",
+      "Folic acid tablets",
+      "None of the above"
+    ],
+    "correct_answer": "Intramuscular Vitamin B12 injections",
+    "points": 1
+  }
+]
