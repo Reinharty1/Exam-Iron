@@ -59,8 +59,11 @@
   <a href="/">⬅️ Back to Exam</a>
 
   <script>
-    async function loadLeaderboard() {
-      const response = await fetch('/results');
+  async function loadLeaderboard() {
+    const url = "https://script.google.com/macros/s/AKfycbyydMkmULebCLoCm1MRbydbbIdk89RbAYs62iZec5ZR91CU7iXwuX4cNtSk9FBnfqmS/exec";
+
+    try {
+      const response = await fetch(url);
       const data = await response.json();
 
       // Sort by score descending
@@ -75,14 +78,19 @@
           <td>${i + 1}</td>
           <td>${r.name}</td>
           <td>${r.score}</td>
-          <td>${r.total}</td>
+          <td>20</td>
           <td>${r.date}</td>
         `;
         tbody.appendChild(row);
       });
+    } catch (error) {
+      console.error("Error loading leaderboard:", error);
+      document.querySelector("#leaderboardTable tbody").innerHTML =
+        `<tr><td colspan="5">⚠️ Could not load leaderboard data.</td></tr>`;
     }
+  }
 
-    loadLeaderboard();
-  </script>
+  loadLeaderboard();
+</script>
 </body>
 </html>
