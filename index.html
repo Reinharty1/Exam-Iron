@@ -67,7 +67,7 @@
 </head>
 <body>
   <div class="container">
-    <h2>🧠 Team Online Exam</h2>
+    <h2>Team Online Exam</h2>
 
     <div id="nameSection">
       <h4>Enter your name to begin:</h4>
@@ -114,7 +114,6 @@
           throw new Error("Question file is empty or invalid.");
         }
 
-        // Randomly select 20 questions
         questions = questions.sort(() => 0.5 - Math.random()).slice(0, 20);
         displayQuestions();
       } catch (error) {
@@ -148,20 +147,37 @@
       const questionsDivs = container.getElementsByClassName("question");
 
       questions.forEach((q, i) => {
+        const correctAnswer =
+          q.correct_answer || q.answer || q.Answer || q.correct || null;
+
         const selected = document.querySelector(`input[name="q${i}"]:checked`);
         const selectedValue = selected ? parseInt(selected.value) : null;
         const selectedText = selected ? q.options[selectedValue] : null;
 
         let feedback = "";
 
-        if (selectedText === q.answer) {
+        if (selectedText === correctAnswer) {
           score++;
-          feedback = `<p class="correct">✅ Correct!</p>`;
+          feedback = `<p class="correct">Correct</p>`;
         } else {
-          feedback = `<p class="wrong">❌ Wrong! Correct answer: <strong>${q.answer}</strong></p>`;
+          feedback = `<p class="wrong">Wrong! Correct answer: <strong>${correctAnswer ?? "N/A"}</strong></p>`;
         }
 
-        questionsDivs[i].insertAdjacentHTML('beforeend', feedback);
+        const labels = questionsDivs[i].querySelectorAll("label");
+        labels.forEach(label => {
+          const input = label.querySelector("input");
+          const optionText = label.textContent.trim();
+
+          if (optionText === correctAnswer) {
+            label.style.color = "green";
+            label.style.fontWeight = "bold";
+          } else if (selected && input.checked) {
+            label.style.color = "red";
+          }
+          input.disabled = true;
+        });
+
+        questionsDivs[i].insertAdjacentHTML("beforeend", feedback);
       });
 
       document.getElementById("submitBtn").style.display = "none";
@@ -184,11 +200,11 @@
       })
       .then(() => {
         result.innerHTML += `
-          <p style="color:gray">✅ Score saved successfully!</p>
-          <p><a href="/leaderboard" target="_blank">🏆 View Leaderboard</a></p>`;
+          <p style="color:gray">Score saved successfully!</p>
+          <p><a href="/leaderboard" target="_blank">View Leaderboard</a></p>`;
       })
       .catch(() => {
-        result.innerHTML += `<p style="color:red">⚠️ Could not save score (offline mode).</p>`;
+        result.innerHTML += `<p style="color:red">Could not save score (offline mode).</p>`;
       });
 
       window.scrollTo(0, document.body.scrollHeight);
