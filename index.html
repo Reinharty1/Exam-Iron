@@ -184,6 +184,7 @@
       showResult(score, questions.length);
     }
 
+    // Updated showResult that saves to Google Sheets
     function showResult(score, total) {
       const result = document.getElementById("resultBox");
       result.innerHTML = `
@@ -193,15 +194,17 @@
         <p>Saving your score...</p>
       `;
 
-      fetch('/save-result', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: studentName, score, total })
+      // Save score to Google Sheet
+      fetch("https://script.google.com/macros/s/AKfycbyydMkmULebCLoCm1MRbydbbIdk89RbAYs62iZec5ZR91CU7iXwuX4cNtSk9FBnfqmS/exec", {
+        method: "POST",
+        body: JSON.stringify({ name: studentName, score: score }),
+        headers: { "Content-Type": "application/json" }
       })
+      .then(res => res.text())
       .then(() => {
         result.innerHTML += `
           <p style="color:gray">Score saved successfully!</p>
-          <p><a href="/leaderboard" target="_blank">View Leaderboard</a></p>`;
+          <p><a href="leaderboard.html" target="_blank">View Leaderboard</a></p>`;
       })
       .catch(() => {
         result.innerHTML += `<p style="color:red">Could not save score (offline mode).</p>`;
