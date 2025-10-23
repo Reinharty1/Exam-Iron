@@ -147,13 +147,10 @@
       const questionsDivs = container.getElementsByClassName("question");
 
       questions.forEach((q, i) => {
-        const correctAnswer =
-          q.correct_answer || q.answer || q.Answer || q.correct || null;
-
+        const correctAnswer = q.correct_answer || q.answer || q.Answer || q.correct || null;
         const selected = document.querySelector(`input[name="q${i}"]:checked`);
         const selectedValue = selected ? parseInt(selected.value) : null;
         const selectedText = selected ? q.options[selectedValue] : null;
-
         let feedback = "";
 
         if (selectedText === correctAnswer) {
@@ -184,7 +181,7 @@
       showResult(score, questions.length);
     }
 
-    // Updated showResult that saves to Google Sheets
+    //  Final showResult that saves to Google Sheets
     function showResult(score, total) {
       const result = document.getElementById("resultBox");
       result.innerHTML = `
@@ -194,13 +191,13 @@
         <p>Saving your score...</p>
       `;
 
-      // Save score to Google Sheet
+      // Save score to Google Sheet (no-cors mode)
       fetch("https://script.google.com/macros/s/AKfycbyydMkmULebCLoCm1MRbydbbIdk89RbAYs62iZec5ZR91CU7iXwuX4cNtSk9FBnfqmS/exec", {
         method: "POST",
-        body: JSON.stringify({ name: studentName, score: score }),
-        headers: { "Content-Type": "application/json" }
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: studentName, score: score })
       })
-      .then(res => res.text())
       .then(() => {
         result.innerHTML += `
           <p style="color:gray">Score saved successfully!</p>
